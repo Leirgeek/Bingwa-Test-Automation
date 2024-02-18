@@ -1,0 +1,41 @@
+<?xml version = "1.0"encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Registration and Login Tests">
+    <test name="Login Tests">
+        <classes>
+            <class name="com.sample.tests.LoginPageTests">
+                <methods>
+                    <include name="testLoginWithInvalidEmail"/>
+                    <include name="testLoginWithInvalidPhonenumber"/>
+                    <include name="testLoginWithInvalidPhonenumberAndPassword"/>
+                    <include name="testPasswordUnmasking"/>
+                    <include name="testLoginWithValidEmailAndPassword"/>
+                    <include name="testLoginWithValidPhonenumberAndPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Registration Tests">
+        <classes>
+            <class name="com.sample.tests.RegistrationPageTests">
+                <methods>
+                    <include name="testPageVisible"/>
+                    <include name="testMissingFirstname"/>
+                    <include name="testMissingLastname"/>
+                    <include name="testMissingPhonenumber"/>
+                    <include name="testInvalidPhonenumber"/>
+                    <include name="testInvalidEmail"/>
+                    <include name="testMissingPassword"/>
+                    <include name="testMissingPassword"/>
+                    <include name="testInvalidPassword"/>
+                    <include name="testPasswordMasked"/>
+                    <include name="testPasswordUnmasking"/>
+
+                    <include name="testExistingEmail"/>
+                    <include name="testExistingPhonenumber"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
